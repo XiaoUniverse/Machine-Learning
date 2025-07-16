@@ -13,13 +13,14 @@ please check xxx to download the dataset.
 
 ### Dataset structure
 
+```
 XFacta/
 ├── fake_sample/
-│   ├── media/                      # Folder containing image batches
-│   │   ├── batch1/                 # Each contains 100 images
+│   ├── media/                     # Folder containing image batches
+│   │   ├── batch1/                # Each contains 100 images
 │   │   ├── ...
 │   │   └── batch12/
-│   ├── batch1.json                 # Metadata for batch1
+│   ├── batch1.json                # Metadata for batch1
 │   ├── ...
 │   └── batch12.json
 ├── true_sample/
@@ -30,8 +31,9 @@ XFacta/
 │   ├── batch1.json
 │   ├── ...
 │   └── batch12.json
-├── dev.json                        # Development split metadata
-└── test.json                       # Test split metadata
+├── dev.json                       # Development split metadata
+└── test.json                      # Test split metadata
+```
 
 
 
