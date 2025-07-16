@@ -89,12 +89,13 @@ git clone https://huggingface.co/Qwen/Qwen2-VL-7B
 ```
 
 ## Getting Started
-
+###Call
 ```bash
 cd Xfacta
 python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --dataset_split xxx --include_evidences xxx --evidence_extraction xxx --top_k_evidence xxx
 ```
 
+###Parameters
 ```
 1. llm_name
     - openai/model name: If you use a model released by OpenAI, for example: openai/gpt-4o
@@ -137,8 +138,9 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 ```
 
 
-```
+
 #Project structure
+```
 ├── Readme.md                      # Help
 ├── logs                           # Log information
 ├── outputs                        # Evidence output file.
