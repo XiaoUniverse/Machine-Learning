@@ -13,25 +13,26 @@ please check xxx to download the dataset.
 
 ### Dataset structure
 
-├── XFacta
-│ ├── fake sample
-│ │ ├── media                # The folder where the images are stored
-│ │ │ ├── batch1             # Each batch contains 100 images
-│ │ │ ├── ...
-│ │ │ └── batch12
-│ │ ├── batch1.json          # Descriptive information for each data
-│ │ ├── ...
-│ │ └── batch12.json
-│ ├── true sample
-│ │ ├── media
-│ │ │ ├── batch1
-│ │ │ ├── ...
-│ │ │ └── batch12
-│ │ ├── batch1.json
-│ │ ├── ...
-│ │ └── batch12.json
-│ ├── dev.json             # (dev set)
-│ └── test.json            # (test set)
+XFacta/
+├── fake_sample/
+│   ├── media/                      # Folder containing image batches
+│   │   ├── batch1/                 # Each contains 100 images
+│   │   ├── ...
+│   │   └── batch12/
+│   ├── batch1.json                 # Metadata for batch1
+│   ├── ...
+│   └── batch12.json
+├── true_sample/
+│   ├── media/
+│   │   ├── batch1/
+│   │   ├── ...
+│   │   └── batch12/
+│   ├── batch1.json
+│   ├── ...
+│   └── batch12.json
+├── dev.json                        # Development split metadata
+└── test.json                       # Test split metadata
+
 
 
 Each sample consists of pictures and descriptive information, and the format is as follows
