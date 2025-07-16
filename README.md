@@ -89,41 +89,53 @@ git clone https://huggingface.co/Qwen/Qwen2-VL-7B
 ```
 
 ## Getting Started
-cd Xfacta
+
 ```bash
+cd Xfacta
 python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --dataset_split xxx --include_evidences xxx --evidence_extraction xxx --top_k_evidence xxx
 ```
-1.llm_name 
-- openai/model name：If you use a model released by OpenAI, for example:openai/gpt-4o
-- gemini/model name：If you use a model released by Google, for example:gemini/flash-2.0
-- The parent directory path of the local model's weight file：if you deploy a local model
-2.--data_path：The path where the dataset is located
-- "/projects/vig/hzy/XFacta"：An example
-2.--reasoning_approach: The choice of reasoning method determines how the model generates conclusions.
-- "cot_prompt_evidence"
-- "prompt_ensembles_evidence"
-- "self_consistency"
-- "multi_step"
-3.--dataset_split: Choose the dataset split to run.
-- "dev"
-- "test"
-4.--include_evidences：Specify the types of evidence to include.
-- 1: Extract text from images.
-- 2: Generate images based on captions.
-- 3: Generate text based on captions.
-- 4: Retrieve news from DuckDuckGo.
-- 5: Retrieve text from DuckDuckGo.
-- 6: Retrieve images from DuckDuckGo.
-- 7: Generate questions and search for text evidence based on the questions.
-- 8: Generate questions and search for image evidence based on the questions.
-5.--evidence_extraction
-- image_text：Extract evidence type 1.
-- caption_text:Extract evidence type 3.
-（"If you want to use --evidence_extraction, you must call the corresponding --include_evidences 1 or 3）
-6.--filter_untrusted：Whether to enable the untrusted source filtering mechanism (flag type).
---filter_untrusted：enable
-7.--top_k_evidence：The maximum number of entries to retain for each evidence type.
-- 5：Retain the top five entries for each evidence type.
+
+```
+1. llm_name
+    - openai/model name: If you use a model released by OpenAI, for example: openai/gpt-4o
+    - gemini/model name: If you use a model released by Google, for example: gemini/flash-2.0
+    - The parent directory path of the local model's weight file: if you deploy a local model
+
+2. --data_path: The path where the dataset is located
+    - "/projects/vig/hzy/XFacta": An example
+
+2. --reasoning_approach: The choice of reasoning method determines how the model generates conclusions.
+    - "cot_prompt_evidence"
+    - "prompt_ensembles_evidence"
+    - "self_consistency"
+    - "multi_step"
+
+3. --dataset_split: Choose the dataset split to run.
+    - "dev"
+    - "test"
+
+4. --include_evidences: Specify the types of evidence to include.
+    - 1: Extract text from images.
+    - 2: Generate images based on captions.
+    - 3: Generate text based on captions.
+    - 4: Retrieve news from DuckDuckGo.
+    - 5: Retrieve text from DuckDuckGo.
+    - 6: Retrieve images from DuckDuckGo.
+    - 7: Generate questions and search for text evidence based on the questions.
+    - 8: Generate questions and search for image evidence based on the questions.
+
+5. --evidence_extraction
+    - image_text: Extract evidence type 1.
+    - caption_text: Extract evidence type 3.
+      (If you want to use --evidence_extraction, you must call the corresponding --include_evidences 1 or 3)
+
+6. --filter_untrusted: Whether to enable the untrusted source filtering mechanism (flag type).
+    - --filter_untrusted: enable
+
+7. --top_k_evidence: The maximum number of entries to retain for each evidence type.
+    - 5: Retain the top five entries for each evidence type.
+```
+
 
 ```
 #Project structure
