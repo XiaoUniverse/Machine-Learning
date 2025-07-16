@@ -40,8 +40,6 @@ XFacta/
 
 
 
-Each sample consists of pictures and descriptive information, and the format is as follows
-
 
 
 ## Preparation
