@@ -11,8 +11,7 @@ To address these issues, we introduce XFacta, a contemporary, real-world dataset
 ##Dataset
 
 ### Dataset download
-please check xxx to download the dataset.
-请点击 [xxx](#) 下载数据集。
+please check [xxx](#) to download the dataset.
 
 
 ### Dataset structure
@@ -143,7 +142,7 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 
 
 
-#Project structure
+##Project structure
 ```
 ├── Readme.md                      # Help
 ├── logs                           # Log information
@@ -170,4 +169,4 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 └── Predict.py                     # Main execution file
 ```
 
-#Citation
+##Citation
