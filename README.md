@@ -8,7 +8,7 @@ Existing benchmarks either contain outdated events—leading to evaluation bias 
 To address these issues, we introduce XFacta, a contemporary, real-world dataset designed for evaluating MLLM-based detectors. We propose a pipeline to automatically construct datasets based on current trending topics. We systematically evaluate various MLLM-based misinformation detection strategies, comparing models of different architectures and scales, and benchmarking them against existing methods. Our analysis provides useful insights for improving multimodal misinformation detection.
 
 
-##Dataset
+## Dataset
 
 ### Dataset download
 please check [xxx](#) to download the dataset.
@@ -44,7 +44,7 @@ Each sample consists of pictures and descriptive information, and the format is 
 
 
 
-##  Preparation
+## Preparation
 
 ### API configuration
 If you need to use OpenAI, Gemini, Google Search, add the following to your '.env 'file:
@@ -55,7 +55,7 @@ GOOGLE_VISION_API_KEY= your_google_vision_api_key_here
 cse_id= your_custom_search_engine_id_here
 ```
 
-###Installing dependencies
+### Installing dependencies
 ```bash
 git clone <my-repo-url>
 conda create -n xfacta python=3.10
@@ -64,13 +64,13 @@ cd Xfacta
 pip install -r requirements.txt
 ```
 
-###Installing dspy
+### Installing dspy
 ```bash
 cd dspy
 pip install .[dev]
 ```
 
-##Deploy a large model if using a local large model
+### Deploy a large model if using a local large model
 ```bash
 ###安装sglang
 pip install --upgrade pip
@@ -92,13 +92,13 @@ git clone https://huggingface.co/Qwen/Qwen2-VL-7B
 ```
 
 ## Getting Started
-###Call
+### Call
 ```bash
 cd Xfacta
 python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --dataset_split xxx --include_evidences xxx --evidence_extraction xxx --top_k_evidence xxx
 ```
 
-###Parameters
+### Parameters
 ```
 1. llm_name
     - openai/model name: If you use a model released by OpenAI, for example: openai/gpt-4o
@@ -142,7 +142,7 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 
 
 
-##Project structure
+## Project structure
 ```
 ├── Readme.md                      # Help
 ├── logs                           # Log information
@@ -169,4 +169,4 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 └── Predict.py                     # Main execution file
 ```
 
-##Citation
+## Citation
