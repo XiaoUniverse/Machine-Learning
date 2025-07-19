@@ -1,4 +1,4 @@
-<img width="1172" height="287" alt="image" src="https://github.com/user-attachments/assets/4537038e-e3e7-4fc9-87f3-91fcfb9834f2" /># XFacta
+# XFacta
 
 ## About
 The rapid spread of multimodal misinformation on social media calls for more effective and robust detection methods. Recent advances using multimodal large language models (MLLMs) have shown potential in addressing this challenge. However, it remains unclear whether the bottleneck lies in evidence retrieval or in reasoning, which hinders further progress.
