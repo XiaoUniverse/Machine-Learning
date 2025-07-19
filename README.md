@@ -12,7 +12,9 @@ To address these issues, we introduce XFacta, a contemporary, real-world dataset
 
 ### Dataset download
 please check [xxx](#) to download the dataset.
-![Uploading image.png…]()
+
+<img width="1172" height="287" alt="image" src="https://github.com/user-attachments/assets/aef18b7c-493d-45d3-9224-628d715a0ba2" />
+
 
 
 ### Dataset structure
