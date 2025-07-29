@@ -1,7 +1,6 @@
+# XFacta: Contemporary, Real-World Dataset and Evaluation for Multimodal Misinformation Detection with Multimodal LLMs
 
-# XFacta
-
-## About
+## 🧠 About
 The rapid spread of multimodal misinformation on social media calls for more effective and robust detection methods. Recent advances using multimodal large language models (MLLMs) have shown potential in addressing this challenge. However, it remains unclear whether the bottleneck lies in evidence retrieval or in reasoning, which hinders further progress.
 
 Existing benchmarks either contain outdated events—leading to evaluation bias due to discrepancies with current social media scenarios, since MLLMs may memorize those events—or are artificially synthetic, failing to reflect real-world misinformation patterns. Additionally, there is a lack of comprehensive analysis of MLLM-based model design strategies.
@@ -9,11 +8,10 @@ Existing benchmarks either contain outdated events—leading to evaluation bias 
 To address these issues, we introduce XFacta, a contemporary, real-world dataset designed for evaluating MLLM-based detectors. We propose a pipeline to automatically construct datasets based on current trending topics. We systematically evaluate various MLLM-based misinformation detection strategies, comparing models of different architectures and scales, and benchmarking them against existing methods. Our analysis provides useful insights for improving multimodal misinformation detection.
 
 
-## Dataset
+## 📂 Dataset
 
 ### Dataset download
 Please check [this link](https://drive.google.com/drive/folders/1Sj5Rr6TpbPNzWhUjQt60fRc6xSQD2DWK?usp=drive_link) to download the dataset.
-
 
 ### Dataset structure
 
@@ -43,7 +41,7 @@ XFacta/
 
 
 
-## Preparation
+## 🔧Preparation
 
 ### API configuration
 If you need to use OpenAI, Gemini, Google Search, add the following to your '.env 'file:
@@ -56,7 +54,7 @@ cse_id= your_custom_search_engine_id_here
 
 ### Installing dependencies
 ```bash
-git clone <my-repo-url>
+git clone 
 conda create -n xfacta python=3.10
 conda activate xfacta
 cd Xfacta
@@ -64,12 +62,13 @@ pip install -r requirements.txt
 ```
 
 ### Installing dspy
+To support multiple image inputs, our dspy library has been modified in the original version.
 ```bash
 cd dspy
 pip install .[dev]
 ```
 
-### Deploy a large model if using a local large model
+### if using a local large model
 ```bash
 ###安装sglang
 pip install --upgrade pip
@@ -90,11 +89,11 @@ git clone https://huggingface.co/Qwen/Qwen2-VL-7B
 #git clone https://huggingface.co/Qwen/Qwen2-VL-72B
 ```
 
-## Getting Started
+## 🚀Getting Started
 ### Call
 ```bash
 cd Xfacta
-python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --dataset_split xxx --include_evidences xxx --evidence_extraction xxx --top_k_evidence xxx
+python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --dataset_split xxx --include_evidences xxx --evidence_extraction xxx --top_k_evidence xxx --filter_untrusted --evidence_cache
 ```
 
 ### Parameters
@@ -132,16 +131,17 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
     - caption_text: Extract evidence type 3.
       (If you want to use --evidence_extraction, you must call the corresponding --include_evidences 1 or 3)
 
-6. --filter_untrusted: Whether to enable the untrusted source filtering mechanism (flag type).
-    - --filter_untrusted: enable
-
-7. --top_k_evidence: The maximum number of entries to retain for each evidence type.
+6. --top_k_evidence: The maximum number of entries to retain for each evidence type.
     - 5: Retain the top five entries for each evidence type.
+
+7. --filter_untrusted: Whether to enable the untrusted source filtering mechanism (flag type).
+
+8. --evidence_cache：Set to use cached evidence (flag type).
 ```
 
 
 
-## Project structure
+## 🏗️ Project structure
 ```
 ├── Readme.md                      # Help
 ├── logs                           # Log information
@@ -168,5 +168,5 @@ python Predict.py --llm_name xxx --data_path xxx --reasoning_approach xxx --data
 └── Predict.py                     # Main execution file
 ```
 
-## Citation
+## 📖 Citation
 # XFacta
