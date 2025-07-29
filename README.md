@@ -12,7 +12,8 @@ To address these issues, we introduce XFacta, a contemporary, real-world dataset
 ## Dataset
 
 ### Dataset download
-please check [https://drive.google.com/drive/folders/1Sj5Rr6TpbPNzWhUjQt60fRc6xSQD2DWK?usp=drive_link](#) to download the dataset.
+Please check [this link](https://drive.google.com/drive/folders/1Sj5Rr6TpbPNzWhUjQt60fRc6xSQD2DWK?usp=drive_link) to download the dataset.
+
 
 ### Dataset structure
 
