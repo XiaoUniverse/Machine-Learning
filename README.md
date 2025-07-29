@@ -1,7 +1,7 @@
 # XFacta: Contemporary, Real-World Dataset and Evaluation for Multimodal Misinformation Detection with Multimodal LLMs
 
 ## 🧠 About
-![Example image]([/home/han.zeyu/XYZ/XFacta.png](https://github.com/XiaoUniverse/Machine-Learning/blob/main/%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF1.png))
+![Example image](https://github.com/XiaoUniverse/Machine-Learning/blob/main/%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF1.png)
 The rapid spread of multimodal misinformation on social media calls for more effective and robust detection methods. Recent advances using multimodal large language models (MLLMs) have shown potential in addressing this challenge. However, it remains unclear whether the bottleneck lies in evidence retrieval or in reasoning, which hinders further progress.
 Existing benchmarks either contain outdated events—leading to evaluation bias due to discrepancies with current social media scenarios, since MLLMs may memorize those events—or are artificially synthetic, failing to reflect real-world misinformation patterns. Additionally, there is a lack of comprehensive analysis of MLLM-based model design strategies.
 To address these issues, we introduce XFacta, a contemporary, real-world dataset designed for evaluating MLLM-based detectors. We propose a pipeline to automatically construct datasets based on current trending topics. We systematically evaluate various MLLM-based misinformation detection strategies, comparing models of different architectures and scales, and benchmarking them against existing methods. Our analysis provides useful insights for improving multimodal misinformation detection.
